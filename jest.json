@@ -1,0 +1,31 @@
+{
+    "rootDir": "src",
+    "testRegex": "/__tests__/.*\\.(js?)$",
+    "coverageDirectory": "../build/coverage",
+    "collectCoverageFrom": [
+        "**/*.{js}"
+    ],
+    "coverageReporters": [
+        "lcov",
+        "text",
+        "text-summary"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 80,
+            "functions": 80,
+            "lines": 80,
+            "statements": 80
+        }
+    },
+    "reporters": [
+        "default",
+        [
+            "jest-junit",
+            {
+                "outputDirectory": "./build/reports",
+                "outputName": "jest.xml"
+            }
+        ]
+    ]
+}
