@@ -8,6 +8,7 @@
         "!build"
     ],
     "coverageReporters": [
+        "json",
         "lcov",
         "text",
         "text-summary"
@@ -19,15 +20,5 @@
             "lines": 80,
             "statements": 80
         }
-    },
-    "reporters": [
-        "default",
-        [
-            "jest-junit",
-            {
-                "outputDirectory": "./build/reports",
-                "outputName": "jest.xml"
-            }
-        ]
-    ]
+    }
 }
