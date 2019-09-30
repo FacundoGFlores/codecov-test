@@ -21,9 +21,6 @@ jobs:
       - store_artifacts:
           path: ./build/reports
 
-      - store_test_results:
-          path: ./build/reports/junit
-
       - codecov/upload:
-          file: ./build/reports/coverage/jest.xml
+          file: ./build/reports/jest.xml
           flags: unit
