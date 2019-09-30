@@ -18,7 +18,7 @@ jobs:
       - run: npm install
       - run: npm run test:cov
 
-      - store_artifacts:
+      - store_test_results:
           path: ./build/reports
 
       - codecov/upload:
