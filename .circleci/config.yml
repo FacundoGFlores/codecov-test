@@ -18,5 +18,12 @@ jobs:
       - run: npm install
       - run: npm run test:cov
 
+      - store_artifacts:
+          path: ./build/reports
+
+      - store_test_results:
+          path: ./build/reports/junit
+
       - codecov/upload:
-          file: build/reports/jest.xml
+          file: ./build/reports/coverage/coverage-final.json
+          flags: unit
