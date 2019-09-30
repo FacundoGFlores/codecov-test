@@ -1,0 +1,12 @@
+codecov:
+  bot: codecov
+
+comment:
+  layout: "header, diff, files"
+
+coverage:
+  status:
+    project:
+      default:
+        target: 80
+        threshold: 0.25
