@@ -1,9 +1,11 @@
 {
     "rootDir": "src",
-    "testRegex": "/__tests__/.*\\.(js?)$",
+    "testRegex": "/__tests__/.*\\.(js)$",
     "coverageDirectory": "../build/coverage",
+    "collectCoverage": true,
     "collectCoverageFrom": [
-        "**/*.{js}"
+        "**/*.js",
+        "!build"
     ],
     "coverageReporters": [
         "lcov",
