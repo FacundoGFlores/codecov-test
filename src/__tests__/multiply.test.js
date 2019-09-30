@@ -8,4 +8,8 @@ describe('Multiply test', () => {
     it('should return 6 when a is 3 and b is 2', () => {
         expect(multiply(3, 2)).toBe(6);
     })
+
+    it('should return 1 when a is 1 and b is 1', () => {
+        expect(multiply(1, 1)).toBe(1);
+    })
 })
