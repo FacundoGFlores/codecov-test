@@ -5,6 +5,6 @@ describe('Sum test', () => {
         expect(sum(2, 2)).toBe(4);
     })
     it('should return 5 when 3 and 2', () => {
-        expect(sum(3, 2)).toBe(4);
+        expect(sum(3, 2)).toBe(5);
     })
 })
