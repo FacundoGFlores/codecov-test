@@ -25,5 +25,5 @@ jobs:
           path: ./build/reports/junit
 
       - codecov/upload:
-          file: ./build/reports/coverage/coverage-final.json
+          file: ./build/reports/coverage/jest.xml
           flags: unit
